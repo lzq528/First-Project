@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-12-17 16:59:59 by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="users_system" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.woniu.pojo.User" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="user">
+        <id name="uid" type="java.lang.Integer">
+            <column name="uid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="uname" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="uname"/>
+        </property>
+        <property generated="never" lazy="false" name="upwd" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="upwd"/>
+        </property>
+        <property generated="never" lazy="false" name="uphoto" optimistic-lock="true" type="string" unique="false">
+            <column name="uphoto"/>
+        </property>
+        <property generated="never" lazy="false" name="rid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="rid"/>
+        </property>
+    </class>
+</hibernate-mapping>
